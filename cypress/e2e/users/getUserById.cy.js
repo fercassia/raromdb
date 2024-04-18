@@ -12,7 +12,6 @@ describe("Testes relacionados consulta de usuário", () => {
   beforeEach(() => {
     cy.createUser(dataUser.createUserToBeAdmin).then((response) => {
       expect(response.body.id);
-      expect(response.body.type);
       expect(response.body.active)
       idUser = response.body.id;
       active = response.body.active;

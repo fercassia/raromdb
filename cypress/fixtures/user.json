@@ -1,12 +1,12 @@
 {
   "createUser":{
-    "name": "Ann Walker",
-    "email": "annwalker@mailinator.com",
+    "name": "Ann Walkr",
+    "email": "annwalkr@mailinator.com",
     "password": "teste123"
   },
   "createUserToBeAdmin":{
-    "name": "Anne Lister",
-    "email": "annelisterr@mailinator.com",
+    "name": "Anne Listr",
+    "email": "annelistr@mailinator.com",
     "password": "teste123"
   }
 }
