@@ -1,0 +1,16 @@
+{
+  "name": "raromdb-api",
+  "version": "1.0.0",
+  "description": "Teste automação estudo raro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:start": "cypress run"
+  },
+  "author": "Fernanda Cassia",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.3"
+  }
+}
