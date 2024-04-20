@@ -1,4 +1,4 @@
-# Cypress Basico V2 TAT
+# Automação Cypress API do curso Raro Academy
 
 Projeto automação Básica para fins de conhecimento do curso Cypress Básico, Talking About Testing, by Walmyr Filho.
 
