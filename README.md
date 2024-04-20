@@ -1,6 +1,6 @@
 # Automação Cypress API do curso Raro Academy
 
-Projeto automação Básica para fins de conhecimento do curso Cypress Básico, Talking About Testing, by Walmyr Filho.
+Projeto automação API, com objetivo de monitoria do curso de QA raro academy.
 
 ## Tecnologias utilizadas nos testes
 
