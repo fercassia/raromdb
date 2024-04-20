@@ -1,13 +1,19 @@
-import { METHOD_HTTP } from "./methodshttp"
+import { METHOD_HTTP } from "./methodshttp";
 
-Cypress.Commands.add('authUser', (email, password) => {
+const endpointPathAuthUser = "api/auth/login"
 
+Cypress.Commands.add("authUser", (email, password, statusCodeFail = true) => {
   const user = {
     email,
-    password
-  }
+    password,
+  };
 
-  cy.request({method: METHOD_HTTP.POST, url: 'api/auth/login', body: user}).then(response =>{
-    Cypress.env('ACCESS_TOKEN', response.body.accessToken);
-  })
-})
+  cy.request({
+    method: METHOD_HTTP.POST,
+    url: endpointPathAuthUser,
+    body: user,
+    failOnStatusCode: statusCodeFail,
+  }).then((response) => {
+    Cypress.env("ACCESS_TOKEN", response.body.accessToken);
+  });
+});
