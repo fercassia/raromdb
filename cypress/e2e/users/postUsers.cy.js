@@ -54,7 +54,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive,failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -76,7 +76,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive,failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -98,7 +98,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
       //Action and Assertion
       cy.createUser(bodyToReceive,failOnStatusCode).then((response) => {
-        expect(response.status).to.eq(400);
+        expect(response.status).to.eq(bodyResponse.statusCode);
         expect(response.body).to.deep.eq(bodyResponse);
       });
     });
@@ -123,7 +123,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive,failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -148,7 +148,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive, failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -173,7 +173,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive, failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -198,7 +198,7 @@ describe("Testes relacionados a criação de usuários", () => {
 
     //Action and Assertion
     cy.createUser(bodyToReceive, failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(400);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   });
@@ -224,7 +224,7 @@ describe("Testes relacionados a criação de usuários", () => {
     })
 
     cy.createUser(bodyWithEmailCreated, failOnStatusCode).then((response) => {
-      expect(response.status).to.eq(409);
+      expect(response.status).to.eq(bodyResponse.statusCode);
       expect(response.body).to.deep.eq(bodyResponse);
     });
   
