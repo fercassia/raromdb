@@ -14,7 +14,7 @@ Criado pelo Iury [@iuryoliveira](https://github.com/iuryoliveira)
 - NPM - [Versão 10.5.2](https://www.npmjs.com/package/npm/v/10.4.0)
 - IDE de desenvolvimento (Sugestão) - [Visual Studio Code](httpscode.visualstudio.com)
 - Ferramenta de automação dos testes - [Cypress v13.7.3](https://www.cypress.io/)
-- Biblioteca de geração de massa de dados [Faker](https://fakerjs.dev/)
+- Biblioteca de geração de massa de dados - [Faker](https://fakerjs.dev/)
 
 > Deve ter instalado na sua máquina `Node.js` e `npm` para rodar o projeto.
 
@@ -28,7 +28,7 @@ Criado pelo Iury [@iuryoliveira](https://github.com/iuryoliveira)
 
 ## Testes
 
-Rode o comando `npm run cy:open` ou `npm run cy:start` para versão headless e gerar o report do mochawewesome
+Rode o comando `npm run cy:open` ou `npm run cy:run` para versão headless e gerar o report do mochawewesome
 
 ## Arquitetura e organização de pastas
 
