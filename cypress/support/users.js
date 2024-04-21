@@ -13,6 +13,34 @@ Cypress.Commands.add("createUser", (bodyUser, statusCodeFail = true) => {
   });
 });
 
+Cypress.Commands.add("listUsers", (statusCodeFail = true) => {
+  var token = {
+    Authorization: `Bearer ${Cypress.env("ACCESS_TOKEN")}`,
+  };
+  cy.request({
+    method: METHOD_HTTP.GET,
+    url: endpointPathUsers,
+    headers: token,
+    failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
+  });
+});
+
+Cypress.Commands.add("listUserById", (id, statusCodeFail = true) => {
+  var token = {
+    Authorization: `Bearer ${Cypress.env("ACCESS_TOKEN")}`,
+  };
+  cy.request({
+    method: METHOD_HTTP.GET,
+    url: endpointPathUsers+"/"+id,
+    headers: token,
+    failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
+  });
+});
+
 Cypress.Commands.add("inactivateUser", (statusCodeFail = true) => {
   var token = {
     Authorization: `Bearer ${Cypress.env("ACCESS_TOKEN")}`,
@@ -22,6 +50,8 @@ Cypress.Commands.add("inactivateUser", (statusCodeFail = true) => {
     url: endpointPathUsers + "/inactivate",
     headers: token,
     failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
   });
 });
 
@@ -34,6 +64,8 @@ Cypress.Commands.add("deleteUser", (idUser, statusCodeFail = true) => {
     url: endpointPathUsers + `/${idUser}`,
     headers: token,
     failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
   });
 });
 
@@ -46,6 +78,8 @@ Cypress.Commands.add("promoteToAdmin", (statusCodeFail = true) => {
     url: endpointPathUsers + "/admin",
     headers: token,
     failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
   });
 });
 
@@ -58,5 +92,7 @@ Cypress.Commands.add("promoteToCritic", (statusCodeFail = true) => {
     url: endpointPathUsers + "/apply",
     headers: token,
     failOnStatusCode: statusCodeFail
+  }).then((response) => {
+    return response;
   });
 });

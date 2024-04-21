@@ -2,7 +2,7 @@
 
 import { faker } from "@faker-js/faker";
 
-describe("Testes relacionados consulta de usuário", () => {
+describe("Testes relacionados consulta de usuário por id", () => {
   const failOnStatusCode = false;
 
   let idUser;
