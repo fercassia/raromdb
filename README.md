@@ -1,8 +1,6 @@
-# Cypress Basico V2 TAT
+# Automação Cypress API do curso Raro Academy
 
 Projeto automação fins de estudo para monitoria do curso Raro Academy.
-
-
 
 Documentação da api: [Swagger - Raromdb](https://raromdb-3c39614e42d4.herokuapp.com/swagger#/auth/AuthController_sigIn). 
 
