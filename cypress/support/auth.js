@@ -15,5 +15,7 @@ Cypress.Commands.add("authUser", (email, password, statusCodeFail = true) => {
     failOnStatusCode: statusCodeFail,
   }).then((response) => {
     Cypress.env("ACCESS_TOKEN", response.body.accessToken);
+    
+    return response;
   });
 });
